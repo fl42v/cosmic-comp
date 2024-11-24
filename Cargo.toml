@@ -120,3 +120,8 @@ lto = "fat"
 
 [patch."https://github.com/Smithay/smithay.git"]
 smithay = { git = "https://github.com/smithay//smithay", rev = "ace2e6a" }
+
+[patch."https://github.com/pop-os/libcosmic.git"]
+libcosmic = { git = "https://github.com/fl42v/libcosmic", branch = "ssd_toggle" }
+cosmic-config = { git = "https://github.com/fl42v/libcosmic", branch = "ssd_toggle", features = ["calloop", "macro"]}
+iced_tiny_skia = { git = "https://github.com/fl42v/libcosmic", branch = "ssd_toggle" }
