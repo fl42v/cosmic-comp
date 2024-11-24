@@ -171,7 +171,8 @@ impl CosmicWindowInternal {
     }
     /// returns if the window has any current or pending server-side decorations
     pub fn has_ssd(&self, pending: bool) -> bool {
-        !self.window.is_decorated(pending)
+        cosmic::config::show_decorations() && !(self.window.is_decorated(pending))
+        // !self.window.is_decorated(pending)
     }
 }
 
